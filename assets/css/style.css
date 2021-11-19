@@ -380,6 +380,12 @@ font-weight: bold;
 text-align: center;
 
 }
+.selfpub {
+
+text-align: left;
+
+}
+
 .pub ul {
   list-style: none;
   padding: 0;
