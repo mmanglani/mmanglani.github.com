@@ -26,6 +26,10 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!--contact form CSS File-->
+  <link href="assets/css/contact-form.css" rel="stylesheet">
+  
+  
 
   <!-- =======================================================
   * Template Name: - v4.6.0
@@ -79,33 +83,51 @@
         <div class="row">
           <div class="col-lg-4">
 <div class="container">
-    <form action="mailto:miriam@imagineblue.com" method="get" enctype="text/plain">
-      <div>
-        <label for="name">Name:
-          <input type="text" name="name" id="name" />
-        </label>
-      </div>
-      <div>
-        <label for="email">Email:
-          <input type="text" name="email" id="email" />
-        </label>
-      </div>
-      <div>
-        <label>Message:</label>
-        <br />
-        <textarea name="Message" rows="12" cols="35"></textarea>
-      </div>
-      <div>
-        <input type="submit" name="submit" value="Send" />
-        <input type="reset" name="reset" value="Clear Form" />
-      </div>
+    <!--begin contact form-->
+    <div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        <div class="fcf-credit" id="fcf-credit">
+        Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+        </div>
+
     </form>
+    </div>
 
-  </form>
 </div>
+    
+    
 
-
-
+<!--end contact form-->
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">    
           </div>
